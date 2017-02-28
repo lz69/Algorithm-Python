@@ -12,7 +12,7 @@ def max_heapify(A, i, heap_size):
     if largest != i:
         A[i], A[largest] = A[largest], A[i]
         max_heapify(A, largest, heap_size)
-        
+
 def build_max_heap(A, heap_size):
     for i in range(int(len(A)/2), -1, -1):
         max_heapify(A, i, heap_size)
